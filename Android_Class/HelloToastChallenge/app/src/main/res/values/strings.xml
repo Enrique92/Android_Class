@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HelloToastChallenge</string>
+    <string name="count">count</string>
+    <string name="toast">toast</string>
+</resources>
