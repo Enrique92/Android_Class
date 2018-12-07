@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+
+    <Button
+        android:id="@+id/prod1"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="addProduct"
+        android:text="@string/cheese"
+        android:background="@color/Yellow"
+        app:layout_constraintBottom_toTopOf="@+id/prod4"
+        app:layout_constraintEnd_toStartOf="@+id/prod2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/prod2"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/Brown"
+        android:layout_marginBottom="8dp"
+        android:onClick="addProduct"
+        android:text="@string/bread"
+        app:layout_constraintBottom_toTopOf="@+id/prod5"
+        app:layout_constraintEnd_toStartOf="@+id/prod3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/prod3"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/Snow"
+        android:onClick="addProduct"
+        android:text="@string/rice"
+        app:layout_constraintBottom_toTopOf="@+id/prod6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/prod4"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="addProduct"
+        android:text="@string/apples"
+        android:background="@color/DarkGreen"
+        app:layout_constraintBottom_toTopOf="@+id/prod7"
+        app:layout_constraintEnd_toStartOf="@+id/prod5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/prod5"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="addProduct"
+        android:background="@color/AntiqueWhite"
+        android:text="@string/yogurt"
+        app:layout_constraintBottom_toTopOf="@+id/prod8"
+        app:layout_constraintEnd_toStartOf="@+id/prod6"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/prod6"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/CornflowerBlue"
+        android:layout_marginBottom="24dp"
+        android:onClick="addProduct"
+        android:text="@string/water"
+        app:layout_constraintBottom_toTopOf="@+id/prod9"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/prod7"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="addProduct"
+        android:background="@color/LightYellow"
+        android:text="@string/butter"
+        app:layout_constraintBottom_toTopOf="@+id/prod10"
+        app:layout_constraintEnd_toStartOf="@+id/prod8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/prod8"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="332dp"
+        android:background="@color/IndianRed"
+        android:onClick="addProduct"
+        android:text="@string/meat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/prod9"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/prod9"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="332dp"
+        android:onClick="addProduct"
+        android:text="@string/melon"
+        android:background="@color/ForestGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/prod10"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/SandyBrown"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="240dp"
+        android:onClick="addProduct"
+        android:text="@string/onion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
