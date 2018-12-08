@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ShoppingListMaps</string>
+    <string name="view_products">View Products</string>
+    <string name="shopping_list">Shopping List</string>
+    <string name="go">Go</string>
+    <string name="cheese">Cheese</string>
+    <string name="bread">Bread</string>
+    <string name="rice">Rice</string>
+    <string name="apples">Apples</string>
+    <string name="yogurt">Yogurt</string>
+    <string name="water">Water</string>
+    <string name="butter">Butter</string>
+    <string name="meat">Meat</string>
+    <string name="melon">Melon</string>
+    <string name="onion">Onion</string>
+</resources>
