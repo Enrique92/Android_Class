@@ -1,15 +1,3 @@
 <resources>
     <string name="app_name">Assigment2</string>
-    <string-array name="movies">
-        <item></item>
-        <item>The Hangover</item>
-        <item>Forrest Gump</item>
-        <item>The Godfather</item>
-        <item>Catch me if you can</item>
-        <item>Pulp Fiction</item>
-        <item>Fight Club</item>
-        <item>Titanic</item>
-        <item>Good Will Hunting</item>
-        <item>The Shaw Shank Redemption</item>
-    </string-array>
 </resources>

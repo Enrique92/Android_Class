@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 .setText(txt)
                 .startChooser();
     }
-    
+
     public void takePicture(View view) {
         Intent mIntent = new Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
         startActivity(mIntent);
