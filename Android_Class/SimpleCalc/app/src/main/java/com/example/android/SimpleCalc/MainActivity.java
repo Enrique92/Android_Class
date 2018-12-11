@@ -20,18 +20,17 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * SimpleCalc is the initial version of SimpleCalcTest.  It has
  * a number of intentional oversights for the student to debug/fix,
  * including input validation (no input, bad number format, div by zero)
- *
+ * <p>
  * In addition there is only one (simple) unit test in this app.
  * All the input validation and the unit tests are added as part of the lessons.
- *
  */
 public class MainActivity extends Activity {
 
@@ -61,6 +60,13 @@ public class MainActivity extends Activity {
      */
     public void onAdd(View view) {
         compute(Calculator.Operator.ADD);
+    }
+
+    /**
+     * OnClick method called when the add Button is pressed.
+     */
+    public void onPow(View view) {
+        compute(Calculator.Operator.POW);
     }
 
     /**
@@ -102,28 +108,31 @@ public class MainActivity extends Activity {
         }
 
         String result;
-        switch (operator) {
-            case ADD:
-                result = String.valueOf(
-                        mCalculator.add(operandOne, operandTwo));
-                break;
-            case SUB:
-                result = String.valueOf(
-                        mCalculator.sub(operandOne, operandTwo));
-                break;
-            case DIV:
-                result = String.valueOf(
-                        mCalculator.div(operandOne, operandTwo));
-                break;
-            case MUL:
-                result = String.valueOf(
-                        mCalculator.mul(operandOne, operandTwo));
-                break;
-            default:
-                result = getString(R.string.computationError);
-                break;
+        if (operandTwo != 0) {
+            switch (operator) {
+                case ADD:
+                    result = String.valueOf(mCalculator.add(operandOne, operandTwo));
+                    break;
+                case SUB:
+                    result = String.valueOf(mCalculator.sub(operandOne, operandTwo));
+                    break;
+                case DIV:
+                    result = String.valueOf(mCalculator.div(operandOne, operandTwo));
+                    break;
+                case MUL:
+                    result = String.valueOf(mCalculator.mul(operandOne, operandTwo));
+                    break;
+                case POW:
+                    result = String.valueOf(mCalculator.pow(operandOne, operandTwo));
+                    break;
+                default:
+                    result = getString(R.string.computationError);
+                    break;
+            }
+            mResultTextView.setText(result);
+        } else {
+            Toast.makeText(this, "You can't divide by 0!!!", Toast.LENGTH_SHORT).show();
         }
-        mResultTextView.setText(result);
     }
 
     /**

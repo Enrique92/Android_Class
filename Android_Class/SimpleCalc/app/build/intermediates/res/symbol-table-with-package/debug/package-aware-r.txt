@@ -661,6 +661,7 @@ id operand_two_edit_text
 id operation_add_btn
 id operation_div_btn
 id operation_mul_btn
+id operation_pow_btn
 id operation_result_text_view
 id operation_sub_btn
 id parentPanel
@@ -792,6 +793,7 @@ string app_name
 string computationError
 string div_operation_text
 string mul_operation_text
+string pow
 string search_menu_title
 string status_bar_notification_info_overflow
 string sub_operation_text
