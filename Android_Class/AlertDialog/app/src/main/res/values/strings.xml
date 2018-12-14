@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AlertDialog</string>
+    <string name="alert">Alert</string>
+    <string name="textAlert">Hello World! Tap the Alert!!!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
