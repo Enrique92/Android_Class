@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RecipesList</string>
+    <string name="title">title</string>
+    <string name="text">text</string>
+    <string name="description_recipe">Description Recipe</string>
+</resources>
