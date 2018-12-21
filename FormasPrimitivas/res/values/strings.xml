@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FormasPrimitivas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="formas">Interacción usuario con objetos 3D</string>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="triangulo">Triángulo</string>
+    <string name="piramide">Pirámide 3D</string>
+    <string name="titulo2D">Seleccione forma 2D a pintar:</string>
+    <string name="titulo3D">Seleccione forma 3D a pintar:</string>
+
+</resources>
