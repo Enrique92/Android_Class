@@ -16,6 +16,8 @@
 
 package com.example.android.materialme;
 
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -37,6 +39,12 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder> {
     // Member variables.
     private ArrayList<Sport> mSportsData;
     private Context mContext;
+    // Constant used for the Intent to indicate the type of transition.
+    private static final String TRANSITION_TYPE = "Transition Type";
+
+    // Constants for shared element transitions.
+    private static final String ANDROID_TRANSITION = "switchAndroid";
+    private static final String BLUE_TRANSITION = "switchBlue";
 
     /**
      * Constructor that passes in the sports data and the context.
@@ -128,7 +136,7 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder> {
 
         @Override
         public void onClick(View mView) {
-            String [] sportInfo = new String[] {"Badminton Info", "Baseball Info", "Basketball Info", "Bowling Info", "Cycling Info",
+            String[] sportInfo = new String[]{"Badminton Info", "Baseball Info", "Basketball Info", "Bowling Info", "Cycling Info",
                     "Golf Info", "Running Info", "Soccer Info", "Swimming Info", "Table Tennis Info", "Tennis Info"};
             Sport currentSport = mSportsData.get(getAdapterPosition());
             ArrayList<Sport> mSports = new ArrayList<>();
@@ -137,7 +145,24 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder> {
             detailIntent.putExtra("title", currentSport.getTitle());
             detailIntent.putExtra("info", currentSport.getInfo());
             detailIntent.putExtra("image_resource", currentSport.getImageResource());
+
+            rotateView(mSportsImage);
             mContext.startActivity(detailIntent);
+        }
+
+        protected void rotateView(ImageView imageView) {
+            // Create the object animator with desired options.
+            final ObjectAnimator animator = ObjectAnimator.ofFloat(imageView, View.ROTATION, 0f, 360f);
+            animator.setDuration(1000);
+            animator.setRepeatMode(ValueAnimator.REVERSE);
+            animator.setRepeatCount(1);
+            imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // Start it when the view is clicked.
+                    animator.start();
+                }
+            });
         }
     }
 }

@@ -1,4 +1,7 @@
-#Tue Jan 08 13:48:12 PST 2019
-base.0=C\:\\Users\\KIKE\\AndroidStudioProjects\\Android_Class\\MaterialMe-Starter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Tue Jan 08 14:37:46 PST 2019
+base.0=C\:\\Users\\KIKE\\AndroidStudioProjects\\Android_Class\\MaterialMe-Starter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=C\:\\Users\\KIKE\\AndroidStudioProjects\\Android_Class\\MaterialMe-Starter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0

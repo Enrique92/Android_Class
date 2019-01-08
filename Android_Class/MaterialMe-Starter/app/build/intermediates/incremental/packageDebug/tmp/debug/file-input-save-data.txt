@@ -1,7 +1,11 @@
 #Internal package file, do not edit.
-#Mon Jan 07 15:49:58 PST 2019
+#Tue Jan 08 14:37:47 PST 2019
+1.base=C\:\\Users\\KIKE\\AndroidStudioProjects\\Android_Class\\MaterialMe-Starter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 0.baseType=DIRECTORY
-0.base=C\:\\Users\\KIKE\\AndroidStudioProjects\\Android_Class\\MaterialMe-Starter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
 0.path=classes.dex
 0.set=DEX
-count=1
+0.base=C\:\\Users\\KIKE\\AndroidStudioProjects\\Android_Class\\MaterialMe-Starter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+1.path=classes.dex
