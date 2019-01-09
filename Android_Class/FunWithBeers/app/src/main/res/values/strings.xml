@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FunWithBeers</string>
+    <string name="title">FUN WITH BEER</string>
+    <string name="textEnjoy">Let\'s Enjoy</string>
+    <string name="textExit">Exit</string>
+    <string name="textAboutIt">About It</string>
+    <string name="title_activity_country">CountryActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="desc_about_app">This is a app that provide to you information about the different types of beers of each country.
+                                  You can see the information about the name, which beer is it, the degrees of it, in which cities
+                                  is more common and a short description. After that, you can select the score of each beer you tried.
+                                  This score is save in the case you want to try again, you can remember how it was.</string>
+    <string name="text_main_menu">Main Menu</string>
+    <string name="country">SELECT A COUNTRY</string>
+    <string name="textContinent">SELECT A CONTINENT</string>
+    <string name="textBack">BACK</string>
+</resources>
