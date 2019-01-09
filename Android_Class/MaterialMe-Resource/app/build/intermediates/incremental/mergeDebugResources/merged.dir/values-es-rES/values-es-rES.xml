@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sports_images">
+        <item>@drawable/img_baseball</item>
+        <item>@drawable/img_badminton</item>
+        <item>@drawable/img_basketball</item>
+        <item>@drawable/img_bowling</item>
+        <item>@drawable/img_cycling</item>
+        <item>@drawable/img_golf</item>
+        <item>@drawable/img_running</item>
+        <item>@drawable/img_soccer</item>
+        <item>@drawable/img_swimming</item>
+        <item>@drawable/img_tabletennis</item>
+        <item>@drawable/img_tennis</item>
+
+    </array>
+    <string-array name="sports_info">
+        <item>Algunas noticias Beisbol!</item>
+        <item>Algunas noticias Badminton!</item>
+        <item>Algunas noticias Baloncesto!</item>
+        <item>Algunas noticias Bolos!</item>
+        <item>Algunas noticias Ciclismo!</item>
+        <item>Algunas noticias Golf!</item>
+        <item>Algunas noticias Correr!</item>
+        <item>Algunas noticias Futbol!</item>
+        <item>Algunas noticias Natacion!</item>
+        <item>Algunas noticias Ping Pong!</item>
+        <item>Algunas noticias Tenis!</item>
+    </string-array>
+    <string-array name="sports_titles">
+        <item>Beisbol</item>
+        <item>Badminton</item>
+        <item>Baloncesto</item>
+        <item>Bolos</item>
+        <item>Ciclismo</item>
+        <item>Golf</item>
+        <item>Correr</item>
+        <item>Futbol</item>
+        <item>Natacion</item>
+        <item>Ping Pong</item>
+        <item>Tenis</item>
+    </string-array>
+    <string name="app_name">Material Me!</string>
+    <string name="news_placeholder">Noticias</string>
+    <string name="sports_info_placeholder">Algunas noticias</string>
+    <string name="subtitle_detail_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices congue rutrum. Phasellus elementum ipsum ac convallis aliquam. Suspendisse eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor diam fringilla tellus, eu euismod mauris neque at neque.</string>
+    <string name="title_placeholder">Titulo</string>
+</resources>
