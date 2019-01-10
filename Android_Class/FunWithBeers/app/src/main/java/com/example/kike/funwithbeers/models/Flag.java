@@ -1,22 +1,11 @@
 package com.example.kike.funwithbeers.models;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
 public class Flag {
     private int id;
-    @SerializedName("name")
-    @Expose
     private String name;
-    @SerializedName("region")
-    @Expose
     private String region;
-    @SerializedName("subregion")
-    @Expose
     private String subRegion;
     private String shortName;
-    @SerializedName("flag")
-    @Expose
     private String flag;
 
     public Flag(int mId, String mName, String mShortName, String mRegion, String mSubRegion, String mFlag) {

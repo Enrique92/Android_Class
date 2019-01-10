@@ -22,7 +22,8 @@
         </activity>
         <activity android:name=".activities.AboutItActivity" />
         <activity android:name=".activities.FlagActivity" />
-        <activity android:name=".activities.ContinentActivity"></activity>
+        <activity android:name=".activities.ContinentActivity" />
+        <activity android:name=".activities.BeerActivity"></activity>
     </application>
 
 </manifest>

@@ -23,6 +23,7 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
         tools:ignore="MissingConstraints"
+        android:onClick="showBeers"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView

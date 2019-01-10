@@ -11,7 +11,6 @@ import android.view.View;
 import com.example.kike.funwithbeers.R;
 
 public class MainActivity extends AppCompatActivity {
-
     private static final int REQ = 1;
     private ConstraintLayout constraintLayout;
     private AnimationDrawable animationDrawable;
@@ -21,16 +20,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Hide de action bar
         getSupportActionBar().hide();
 
+        // Initialized the params of the view
         constraintLayout = findViewById(R.id.mainMenuLayout);
         constraintLayout.setBackgroundResource(R.drawable.animation_list_background);
         animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
     }
 
+    /**
+     * This method is load when the cursor return to this Activity
+     */
     @Override
     protected void onResume() {
         super.onResume();
+        // Add an animation and sound to the GIF that we add
         if (animationDrawable != null && !animationDrawable.isRunning()) {
             player = MediaPlayer.create(this, R.raw.beer_sound);
             player.setLooping(true);
@@ -39,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method is call when the activity was in Pause
+     */
     @Override
     protected void onPause() {
         super.onPause();
@@ -49,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Change to the other Activity and select the county
+     * Method that change to the other Activity and select the country
      *
      * @param view
      */
@@ -59,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Exit from the app
+     * Method that exit from the app
      *
      * @param view
      */
@@ -69,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Know more about the app
+     * Method that show more about the app
      *
      * @param view
      */

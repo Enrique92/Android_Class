@@ -14,7 +14,6 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 public class ContinentActivity extends AppCompatActivity {
-
     private static final int REQ = 1;
     private static final String CONT = "CONT";
     private ImageButton mImgViewContinents;
@@ -27,6 +26,7 @@ public class ContinentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_continent);
+        // Hide de action bar
         getSupportActionBar().hide();
 
         mImgViewContinents = findViewById(R.id.imgContinent);
@@ -42,6 +42,7 @@ public class ContinentActivity extends AppCompatActivity {
         // continent and the number of countries that it have.
         nameContinent.setText(mContinentsList.get(cont).getName());
 
+        // Print the image of each continent
         Picasso.get()
                 .load(mContinentsList.get(cont).getImage())
                 .fit()
@@ -50,6 +51,9 @@ public class ContinentActivity extends AppCompatActivity {
         mImgViewContinents.setClipToOutline(true);
     }
 
+    /**
+     * Method that load all the continents to show in the screen
+     */
     private void loadContinents() {
         mContinentsList = new ArrayList<>();
         mContinentsList.add(new Continent(0, "North America", "NA", R.drawable.noth_america));
@@ -61,17 +65,30 @@ public class ContinentActivity extends AppCompatActivity {
         mContinentsList.add(new Continent(6, "Oceania", "OC", R.drawable.oceania));
     }
 
+    /**
+     * Method to return to the Main Menu
+     *
+     * @param view
+     */
     public void returnMenu(View view) {
         Intent mMainMenu = new Intent(getApplicationContext(), MainActivity.class);
         finish();
     }
 
+    /**
+     * Method to move to the next continent of the Left
+     *
+     * @param view
+     */
     public void moveLeftCont(View view) {
         if (cont > 0) {
             cont--;
         }
+
+        // Print the name of the continent
         nameContinent.setText(mContinentsList.get(cont).getName());
 
+        // Print the image of each continent
         Picasso.get()
                 .load(mContinentsList.get(cont).getImage())
                 .fit()
@@ -80,14 +97,22 @@ public class ContinentActivity extends AppCompatActivity {
         mImgViewContinents.setClipToOutline(true);
     }
 
+    /**
+     * Method to move to the next continent of the Right
+     *
+     * @param view
+     */
     public void moveRightCont(View view) {
         if (cont < 6) {
             cont++;
         } else {
             cont = 6;
         }
+
+        // Print the name of the continent
         nameContinent.setText(mContinentsList.get(cont).getName());
 
+        // Print the image of each continent
         Picasso.get()
                 .load(mContinentsList.get(cont).getImage())
                 .fit()
@@ -96,6 +121,11 @@ public class ContinentActivity extends AppCompatActivity {
         mImgViewContinents.setClipToOutline(true);
     }
 
+    /**
+     * Method to move to the FlagActivity and show the flags of that continent
+     *
+     * @param view
+     */
     public void viewCountriesContinent(View view) {
         Intent mCountries = new Intent(getApplicationContext(), FlagActivity.class);
         mCountries.putExtra(CONT, mContinentsList.get(cont).getShortName());
