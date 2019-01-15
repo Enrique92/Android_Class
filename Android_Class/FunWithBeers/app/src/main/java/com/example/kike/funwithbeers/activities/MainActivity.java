@@ -85,4 +85,13 @@ public class MainActivity extends AppCompatActivity {
         Intent mAboutIt = new Intent(getApplicationContext(), AboutItActivity.class);
         startActivityForResult(mAboutIt, REQ);
     }
+
+    /**
+     * Method that show the Breweries of the world
+     * @param view
+     */
+    public void showBreweries(View view) {
+        Intent mBreweries = new Intent(getApplicationContext(), BreweryActivity.class);
+        startActivityForResult(mBreweries, REQ);
+    }
 }

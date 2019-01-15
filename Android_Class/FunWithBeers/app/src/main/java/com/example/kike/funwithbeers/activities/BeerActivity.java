@@ -20,13 +20,13 @@ public class BeerActivity extends AppCompatActivity {
 
         mImageBeer = findViewById(R.id.imageBeer);
 
-        String url = "https://funwithbeers.000webhostapp.com/ImagesBeers/barba_roja_lager.png";
-
-        // Print the flag of each country
-        Picasso.get()
-                .load(url)
-                .fit()
-                .into(mImageBeer);
-        mImageBeer.setClipToOutline(true);
+//        String url = "https://funwithbeers.000webhostapp.com/ImagesBeers/barba_roja_lager.png";
+//
+//        // Print the flag of each country
+//        Picasso.get()
+//                .load(url)
+//                .fit()
+//                .into(mImageBeer);
+//        mImageBeer.setClipToOutline(true);
     }
 }

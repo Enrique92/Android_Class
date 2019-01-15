@@ -14,4 +14,8 @@
     <string name="country">SELECT A COUNTRY</string>
     <string name="textContinent">SELECT A CONTINENT</string>
     <string name="textBack">BACK</string>
+    <string name="breweries">Breweries</string>
+    <string name="description">Using crystal clear water, the finest hops and Canadian-grown malted barley, Molson slowly ferments each brew to produce a smooth, refreshing beer with genuine Canadian taste.</string>
+    <string name="title_activity_brewery">BreweryActivity</string>
+    <string name="descriptionbrewery">It is a Dutch brewing company, founded in 1864 by Gerard Adriaan Heineken in Amsterdam. As of 2017, Heineken owns over 165 breweries in more than 70 countries. It produces 250 international, regional, local and speciality beers and ciders and employs approximately 73,000 people.</string>
 </resources>

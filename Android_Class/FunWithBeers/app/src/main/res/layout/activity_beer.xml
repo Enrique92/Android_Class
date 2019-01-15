@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,11 +9,155 @@
 
     <ImageButton
         android:id="@+id/imageBeer"
-        android:layout_width="120dp"
-        android:layout_height="360dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="145dp"
+        android:layout_width="157dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
         android:background="@color/colorBackground"
-        tools:layout_editor_absoluteY="64dp"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:src="@drawable/molson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imgLeftButton"
+        style="@style/LeftButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBeer"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imgRightButton"
+        style="@style/RightButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBeer"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/returnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/my_button_bg"
+        android:drawableLeft="@drawable/ic_return"
+        android:fontFamily="casual"
+        android:padding="8dp"
+        android:text="@string/textBack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/beerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="casual"
+        android:text="Molson Lager"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButton"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageBeer" />
+
+    <TextView
+        android:id="@+id/beerType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="casual"
+        android:text="Lager"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButton"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
+        app:layout_constraintTop_toBottomOf="@+id/beerName" />
+
+    <TextView
+        android:id="@+id/beerCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="casual"
+        android:text="Canada"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButton"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
+        app:layout_constraintTop_toBottomOf="@+id/beerType" />
+
+    <TextView
+        android:id="@+id/beerABV"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="casual"
+        android:text="4.1%"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButton"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
+        app:layout_constraintTop_toBottomOf="@+id/beerCountry" />
+
+    <TextView
+        android:id="@+id/beerDescription"
+        android:layout_width="354dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="casual"
+        android:justificationMode="inter_word"
+        android:text="@string/description"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBeer"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButton"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
+        app:layout_constraintTop_toBottomOf="@+id/beerABV"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <RatingBar
+        android:id="@+id/ratingBeer"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:numStars="5"
+        android:padding="4dp"
+        android:rating="4.5"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/returnMenu"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButton"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
+        app:layout_constraintTop_toBottomOf="@+id/beerDescription" />
+
 </android.support.constraint.ConstraintLayout>

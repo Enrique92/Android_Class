@@ -24,7 +24,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <Button
         android:id="@+id/enjoy"
@@ -32,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="68dp"
         android:background="@drawable/my_button_bg"
         android:drawableLeft="@drawable/ic_fun"
         android:fontFamily="casual"
@@ -47,13 +48,34 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/breweries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/my_button_bg"
+        android:drawableLeft="@drawable/ic_breweries"
+        android:fontFamily="casual"
+        android:onClick="showBreweries"
+        android:padding="8dp"
+        android:text="@string/breweries"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/aboutIt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enjoy"
+        tools:ignore="MissingConstraints" />
+
+    <Button
         android:id="@+id/aboutIt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/my_button_bg"
@@ -65,9 +87,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/exit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enjoy" />
+        app:layout_constraintTop_toBottomOf="@+id/breweries" />
 
     <Button
         android:id="@+id/exit"

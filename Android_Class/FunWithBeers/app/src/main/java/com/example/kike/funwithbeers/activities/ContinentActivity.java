@@ -57,7 +57,7 @@ public class ContinentActivity extends AppCompatActivity {
     private void loadContinents() {
         mContinentsList = new ArrayList<>();
         mContinentsList.add(new Continent(0, "North America", "NA", R.drawable.noth_america));
-        mContinentsList.add(new Continent(1, "Center America", "CA", R.drawable.center_america));
+        mContinentsList.add(new Continent(1, "Central America", "CA", R.drawable.center_america));
         mContinentsList.add(new Continent(2, "South America", "SA", R.drawable.south_america));
         mContinentsList.add(new Continent(3, "Europe", "EU", R.drawable.europe));
         mContinentsList.add(new Continent(4, "Africa", "AF", R.drawable.africa));
