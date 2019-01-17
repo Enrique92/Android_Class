@@ -1,0 +1,103 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:20:1-39:12
+INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:20:1-39:12
+INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:20:1-39:12
+INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:20:1-39:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5e1c52bbbad826884b52a44273e66291\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\a94a39c6fe94261edb691bf2ea38cc3f\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d269660cb3f2072694990482779a3408\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\4c322378a14022ad67f6f70814783ca8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\da0986698b555e32d372a01b94077ee4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\32b8b62cac48bb255f25659b395ad0b9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\59f59eeadf6e5136601c0ee30e9bada3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\6b7e82a7b3f00f6b28801c3f3f66c414\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\156c4866c447817a76025208b03a7a6b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e6ec366f56e9c1ae34411786bceecf42\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ff272cbad2ae223963f5b7e4cfb22af6\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c75be38ec7317dde89b99921b044681c\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:20:1-39:12
+INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:20:1-39:12
+INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:20:1-39:12
+	package
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:21:5-43
+		INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:20:1-39:12
+		INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:20:1-39:12
+		INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:20:11-69
+application
+ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:23:5-37:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\a94a39c6fe94261edb691bf2ea38cc3f\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\a94a39c6fe94261edb691bf2ea38cc3f\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:28:9-35
+	android:label
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:26:9-41
+	android:roundIcon
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:27:9-54
+	android:icon
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:25:9-43
+	android:allowBackup
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:24:9-35
+	android:theme
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:29:9-40
+activity#com.android.example.notifyme.MainActivity
+ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:30:9-36:20
+	android:name
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:30:19-75
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:31:13-35:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:34:17-77
+	android:name
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml:34:27-74
+uses-sdk
+INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5e1c52bbbad826884b52a44273e66291\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5e1c52bbbad826884b52a44273e66291\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\a94a39c6fe94261edb691bf2ea38cc3f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\a94a39c6fe94261edb691bf2ea38cc3f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d269660cb3f2072694990482779a3408\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d269660cb3f2072694990482779a3408\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\4c322378a14022ad67f6f70814783ca8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\4c322378a14022ad67f6f70814783ca8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\da0986698b555e32d372a01b94077ee4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\da0986698b555e32d372a01b94077ee4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\32b8b62cac48bb255f25659b395ad0b9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\32b8b62cac48bb255f25659b395ad0b9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\59f59eeadf6e5136601c0ee30e9bada3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\59f59eeadf6e5136601c0ee30e9bada3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\6b7e82a7b3f00f6b28801c3f3f66c414\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\6b7e82a7b3f00f6b28801c3f3f66c414\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\156c4866c447817a76025208b03a7a6b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\156c4866c447817a76025208b03a7a6b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e6ec366f56e9c1ae34411786bceecf42\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e6ec366f56e9c1ae34411786bceecf42\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ff272cbad2ae223963f5b7e4cfb22af6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ff272cbad2ae223963f5b7e4cfb22af6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c75be38ec7317dde89b99921b044681c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\KIKE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c75be38ec7317dde89b99921b044681c\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\KIKE\AndroidStudioProjects\Android_Class\NotifyMe\app\src\main\AndroidManifest.xml
