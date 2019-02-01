@@ -1,18 +1,20 @@
 package com.example.kike.funwithbeers.activities;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.constraint.ConstraintLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.example.kike.funwithbeers.R;
 
 public class MainActivity extends AppCompatActivity {
-    private static final int REQ = 1;
-    private ConstraintLayout constraintLayout;
+    private LinearLayout linearLayout;
     private AnimationDrawable animationDrawable;
     private MediaPlayer player;
 
@@ -24,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         // Initialized the params of the view
-        constraintLayout = findViewById(R.id.mainMenuLayout);
-        constraintLayout.setBackgroundResource(R.drawable.animation_list_background);
-        animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+        linearLayout = findViewById(R.id.mainMenuLayout);
+        linearLayout.setBackgroundResource(R.drawable.animation_list_background);
+        animationDrawable = (AnimationDrawable) linearLayout.getBackground();
     }
 
     /**
@@ -61,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param view
      */
-    public void showFlags(View view) {
-        Intent mContinents = new Intent(getApplicationContext(), ContinentActivity.class);
-        startActivityForResult(mContinents, REQ);
+    public void showBeersBy(View view) {
+        Intent mContinents = new Intent(getApplicationContext(), SelectionActivity.class);
+        startActivity(mContinents);
     }
 
     /**
@@ -73,7 +75,57 @@ public class MainActivity extends AppCompatActivity {
      */
     public void exitApp(View view) {
         // Exit from the App
-        finishAffinity();
+        player = MediaPlayer.create(this, R.raw.exit_sound);
+        player.setLooping(false);
+        player.start();
+
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this, R.style.CustomDialogTheme);
+        alertDialog.setMessage("Are you sure you want to quit?");
+        alertDialog.setTitle("Exit");
+        alertDialog.setIcon(android.R.drawable.ic_dialog_alert);
+        alertDialog.setCancelable(true);
+        alertDialog.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                finishAffinity();
+                player.stop();
+            }
+        });
+        alertDialog.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                onResume();
+            }
+        });
+        alertDialog.show();
+    }
+
+    /**
+     * Method that execute when you press the back button
+     *
+     * @param keyCode
+     * @param event
+     * @return
+     */
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        player = MediaPlayer.create(this, R.raw.exit_sound);
+        player.setLooping(false);
+        player.start();
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            new AlertDialog.Builder(this, R.style.CustomDialogTheme)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle("Exit")
+                    .setMessage("Are you sure you want to quit?")
+                    .setNegativeButton(android.R.string.cancel, null)
+                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finishAffinity();
+                            player.stop();
+                        }
+                    }).show();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
     /**
@@ -83,15 +135,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void aboutIt(View view) {
         Intent mAboutIt = new Intent(getApplicationContext(), AboutItActivity.class);
-        startActivityForResult(mAboutIt, REQ);
+        startActivity(mAboutIt);
     }
 
     /**
-     * Method that show the Breweries of the world
+     * Show the brands of the beers of the world
+     *
      * @param view
      */
-    public void showBreweries(View view) {
-        Intent mBreweries = new Intent(getApplicationContext(), BreweryActivity.class);
-        startActivityForResult(mBreweries, REQ);
+    public void showBrands(View view) {
+        Intent mShowBrands = new Intent(getApplicationContext(), BrandActivity.class);
+        startActivity(mShowBrands);
     }
 }

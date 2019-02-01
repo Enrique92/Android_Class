@@ -13,18 +13,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
+        <activity
+            android:name=".activities.SelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TypeActivity"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- The API key for Google Maps-based APIs. -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.AboutItActivity" />
-        <activity android:name=".activities.FlagActivity" />
-        <activity android:name=".activities.ContinentActivity" />
-        <activity android:name=".activities.BeerActivity" />
-        <activity android:name=".activities.BreweryActivity"></activity>
+        <activity
+            android:name=".activities.AboutItActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FlagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContinentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BeerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BrandActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

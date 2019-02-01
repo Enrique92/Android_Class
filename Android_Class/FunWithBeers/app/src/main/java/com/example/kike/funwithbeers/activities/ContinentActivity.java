@@ -8,19 +8,19 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.kike.funwithbeers.R;
+import com.example.kike.funwithbeers.connectionSql.DataBaseAccess;
 import com.example.kike.funwithbeers.models.Continent;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
 public class ContinentActivity extends AppCompatActivity {
-    private static final int REQ = 1;
     private static final String CONT = "CONT";
     private ImageButton mImgViewContinents;
-    private ImageButton btnLeft, btnRight, btnReturn;
     private ArrayList<Continent> mContinentsList;
     private TextView nameContinent, numberCountries;
     private int cont = 0;
+    private DataBaseAccess sql;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +30,6 @@ public class ContinentActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         mImgViewContinents = findViewById(R.id.imgContinent);
-        btnLeft = findViewById(R.id.imgLeftButtonCont);
-        btnRight = findViewById(R.id.imgRightButtonCont);
         nameContinent = findViewById(R.id.nameContinent);
         numberCountries = findViewById(R.id.numberCountries);
 
@@ -49,6 +47,22 @@ public class ContinentActivity extends AppCompatActivity {
                 .centerCrop()
                 .into(mImgViewContinents);
         mImgViewContinents.setClipToOutline(true);
+
+        // Open the connection of the Database
+        openConnectionDB();
+
+        // Get the number of countries that the continent have
+        getNumberCountries();
+    }
+
+    /**
+     * Open the connection of the DB
+     */
+    public void openConnectionDB() {
+        // Start the connection with the Database
+        sql = DataBaseAccess.getInstance(getApplicationContext());
+        // Open the connection
+        sql.openDataBaseConnection();
     }
 
     /**
@@ -57,7 +71,7 @@ public class ContinentActivity extends AppCompatActivity {
     private void loadContinents() {
         mContinentsList = new ArrayList<>();
         mContinentsList.add(new Continent(0, "North America", "NA", R.drawable.noth_america));
-        mContinentsList.add(new Continent(1, "Central America", "CA", R.drawable.center_america));
+        mContinentsList.add(new Continent(1, "Central America", "CA", R.drawable.central_america));
         mContinentsList.add(new Continent(2, "South America", "SA", R.drawable.south_america));
         mContinentsList.add(new Continent(3, "Europe", "EU", R.drawable.europe));
         mContinentsList.add(new Continent(4, "Africa", "AF", R.drawable.africa));
@@ -71,7 +85,6 @@ public class ContinentActivity extends AppCompatActivity {
      * @param view
      */
     public void returnMenu(View view) {
-        Intent mMainMenu = new Intent(getApplicationContext(), MainActivity.class);
         finish();
     }
 
@@ -84,6 +97,9 @@ public class ContinentActivity extends AppCompatActivity {
         if (cont > 0) {
             cont--;
         }
+
+        // Get the number of countries that the continent have
+        getNumberCountries();
 
         // Print the name of the continent
         nameContinent.setText(mContinentsList.get(cont).getName());
@@ -109,6 +125,9 @@ public class ContinentActivity extends AppCompatActivity {
             cont = 6;
         }
 
+        // Get the number of countries that the continent have
+        getNumberCountries();
+
         // Print the name of the continent
         nameContinent.setText(mContinentsList.get(cont).getName());
 
@@ -122,6 +141,13 @@ public class ContinentActivity extends AppCompatActivity {
     }
 
     /**
+     * Get the number of countries from the Database
+     */
+    public void getNumberCountries() {
+        numberCountries.setText(String.valueOf(sql.getNumCou(mContinentsList.get(cont).getShortName())));
+    }
+
+    /**
      * Method to move to the FlagActivity and show the flags of that continent
      *
      * @param view
@@ -129,6 +155,6 @@ public class ContinentActivity extends AppCompatActivity {
     public void viewCountriesContinent(View view) {
         Intent mCountries = new Intent(getApplicationContext(), FlagActivity.class);
         mCountries.putExtra(CONT, mContinentsList.get(cont).getShortName());
-        startActivityForResult(mCountries, REQ);
+        startActivityForResult(mCountries, 1);
     }
 }

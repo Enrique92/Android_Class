@@ -6,20 +6,20 @@ public class Beer {
     private String country;
     private String type;
     // % of Alcohol
-    private String percofalc;
+    private String ABV;
     private String description;
-    private int score;
+    private float score;
     private String linkimage;
 
-    public Beer(int mId, String mName, String mCountry, String mType, String mPercofalc, String mDescription, int mScore, String mLinkimage) {
-        id = mId;
-        name = mName;
-        country = mCountry;
-        type = mType;
-        percofalc = mPercofalc;
-        description = mDescription;
-        score = mScore;
-        linkimage = mLinkimage;
+    public Beer(int id, String name, String country, String type, String ABV, String description, float score, String linkimage) {
+        this.id = id;
+        this.name = name;
+        this.country = country;
+        this.type = type;
+        this.ABV = ABV;
+        this.description = description;
+        this.score = score;
+        this.linkimage = linkimage;
     }
 
     public int getId() {
@@ -54,12 +54,12 @@ public class Beer {
         type = mType;
     }
 
-    public String getPercofalc() {
-        return percofalc;
+    public String getABV() {
+        return ABV;
     }
 
-    public void setPercofalc(String mPercofalc) {
-        percofalc = mPercofalc;
+    public void setABV(String ABV) {
+        this.ABV = ABV;
     }
 
     public String getDescription() {
@@ -70,11 +70,11 @@ public class Beer {
         description = mDescription;
     }
 
-    public int getScore() {
+    public float getScore() {
         return score;
     }
 
-    public void setScore(int mScore) {
+    public void setScore(float mScore) {
         score = mScore;
     }
 
